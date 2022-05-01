@@ -11,7 +11,7 @@ async function getAccount() {
         //NONPROD
         //await ethereum.request({ method: 'wallet_switchEthereumChain', params: [{ chainId: '0x13881' }], });
         //PROD
-       await ethereum.request({ method: 'wallet_switchEthereumChain', params: [{ chainId: '0xa869' }], });
+       await ethereum.request({ method: 'wallet_switchEthereumChain', params: [{ chainId: '0xa86a' }], });
         const account = accounts[0];
         console.log("Found Accounts",accounts);
         walletButton.textContent = "Connected";
