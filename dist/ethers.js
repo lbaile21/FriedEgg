@@ -1453,7 +1453,7 @@ async function Approve(){
     const signer = provider.getSigner();
     const EggContract = new ethers.Contract(eggAddress, eggABI, provider);
     const signedContract = EggContract.connect(signer);
-    let appr = await signedContract.approve("0xA4E3d13B717270715CB71834c9833Ddea01e83b4", BigInt(1*(10**18)),{value: 0});
+    let appr = await signedContract.approve("0x067F31Efb0E4f99D92063c008f091523FA34a79b", BigInt(1*(10**18)),{value: 0});
     console.log(appr);
     setTimeout(changeDatas, 4000);
  }
