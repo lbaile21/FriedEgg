@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name ='viewport' content="width=device-width,initial-scale=1">
+  <title>Fry Your Egg</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js" type="text/javascript">
+  </script>
+  <script src = "./ethers.js" defer></script>
+
+</head>
+<body>
+  <div id="walletBar" style="padding-top:5px">
+    <button class ="button" id="wallet" style="position:relative;float:right;padding:unset;margin-right: 5vw;padding:4px">Connect</button>
+  </div>
+<!-- partial:index.partial.html -->
+
+<h1>Fry your EGG</h1>
+<p>Get a Sweet Fried Egg NFT.</p>
+<p id = "loginAlert">Wait for Approval to Fry Your Egg</p>
+<button class = "button" onclick = "Approve()">Approve</button>
+<div id="modalPopUp" style="width:25vw;height:10vw;margin:auto; visibility:hidden;text-align: center;justify-content: center;vertical-align: middle;align-items: center;">
+<img id="myImg" src="./friedEgg.PNG" alt="FriedEgg" style="width:100%">
+</div>
+
+<section id="kitchen">
+  <img id="egg" class="egg" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/259510/egg.svg"/>
+  <img id="skillet" class="dropzone" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/259510/skillet.svg"/>
+</section>
+
+
+
+
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+
+</body>
+</html>
